@@ -17,7 +17,7 @@ public class Test0 {
 	//driver.findElement(By.linkText("Forgotten password?")).click();
 	
 	driver.findElement(By.partialLinkText("password?")).click();
-
+System.setProperty("webdriver.chrome.driver","./Softwares/chromedriver");
 	}
 
 }
