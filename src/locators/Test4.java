@@ -34,6 +34,7 @@ public class Test4 {
 		}
 		Thread.sleep(3000);
 		driver.close();
+		System.out.println("hello");
 		
 
 	}
