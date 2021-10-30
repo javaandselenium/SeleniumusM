@@ -8,9 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.netty.util.concurrent.NonStickyEventExecutorGroup;
-
-public class Test0 {
+public class Test1 {
 
 	public static void main(String[] args) throws AWTException {
 		WebDriver driver=new ChromeDriver();
@@ -20,10 +18,11 @@ public class Test0 {
 		
 		Robot r=new Robot();
 		r.keyPress(KeyEvent.VK_CONTROL);
-		r.keyPress(KeyEvent.VK_T);
+		r.keyPress(KeyEvent.VK_N);
 		
 		r.keyRelease(KeyEvent.VK_CONTROL);
-        r.keyRelease(KeyEvent.VK_T);
+        r.keyRelease(KeyEvent.VK_N);
+
 	}
 
 }

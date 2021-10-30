@@ -8,22 +8,26 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.netty.util.concurrent.NonStickyEventExecutorGroup;
+public class Test2 {
 
-public class Test0 {
-
-	public static void main(String[] args) throws AWTException {
+	public static void main(String[] args) throws AWTException, InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.myntra.com/");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
+		Thread.sleep(3000);
+		
 		Robot r=new Robot();
 		r.keyPress(KeyEvent.VK_CONTROL);
-		r.keyPress(KeyEvent.VK_T);
+		r.keyPress(KeyEvent.VK_WINDOWS);
+		r.keyPress(KeyEvent.VK_DOWN);
 		
 		r.keyRelease(KeyEvent.VK_CONTROL);
-        r.keyRelease(KeyEvent.VK_T);
+        r.keyRelease(KeyEvent.VK_WINDOWS);
+        r.keyRelease(KeyEvent.VK_DOWN);
+
+
 	}
 
 }
