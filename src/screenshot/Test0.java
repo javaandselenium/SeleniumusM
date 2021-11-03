@@ -22,8 +22,9 @@ public class Test0 {
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		
 		//step:2 access the method and photo is stored in RAM
-		File src = ts.getScreenshotAs(OutputType.FILE);
+		 File src = ts.getScreenshotAs(OutputType.FILE);
 		
+	
 		//Step:3 wanted to specify the required location
 		File dest=new File("./photo/myntra.png");
 		
